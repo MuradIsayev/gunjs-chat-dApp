@@ -31,7 +31,6 @@
 
   onMount(() => {
     var match = {
-      // lexical queries are kind of like a limited RegEx or Glob.
       '.': {
         // property selector
         '>': new Date(+new Date() - 1 * 1000 * 60 * 60 * 3).toISOString() // find any indexed property larger ~3 hours ago
