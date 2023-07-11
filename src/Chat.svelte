@@ -7,7 +7,7 @@
 
   import GUN from 'gun';
   import SEA from 'gun/sea';
-  const db = GUN();
+  const db = GUN({ peers: ['https://gunjs.herokuapp.com/gun'] });
 
   let newMessage;
   let messages = [];

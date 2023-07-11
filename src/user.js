@@ -4,7 +4,7 @@ import 'gun/axe'; // Advanced Exchange Equation, Connects to other peers, enable
 import { writable } from 'svelte/store'; // Svelte store, enables state management across components
 
 // Database
-export const db = GUN();
+export const db = GUN({ peers: ['https://gun-us.herokuapp.com/gun'] });
 
 // User
 export const user = db.user().recall({ sessionStorage: true }); // User's data, stored in session storage
